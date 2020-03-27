@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-			static void AgeCalculator(DateTime birthdate)
-		{
-			DateTime currentTime = DateTime.Now;
-			int age = currentTime.Year - birthdate.Year;
-			if (birthdate.Month > currentTime.Month) age--;
-			if (birthdate.Month == currentTime.Month && birthdate.Day > currentTime.Day) age--;
-			Console.WriteLine($"Your age is: {age}");
-			Console.ReadLine();
-		}
+		//	static void AgeCalculator(DateTime birthdate)
+		//{
+		//	DateTime currentTime = DateTime.Now;
+		//	int age = currentTime.Year - birthdate.Year;
+		//	if (birthdate.Month > currentTime.Month) age--;
+		//	if (birthdate.Month == currentTime.Month && birthdate.Day > currentTime.Day) age--;
+		//	Console.WriteLine($"Your age is: {age}");
+		//	Console.ReadLine();
+		//}
     // KLASI
     class Person
     {
@@ -94,7 +94,7 @@ namespace Classes
 			#region Age Calculator
 			Console.WriteLine("Enter your birthdate in format: month-day-year");
 			DateTime birthday = DateTime.Parse(Console.ReadLine());
-			AgeCalculator(birthday);
+			//AgeCalculator(birthday);
 			#endregion
         }
     }
