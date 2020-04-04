@@ -11,13 +11,13 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Employee emp = new Employee() { FirstName = "Bob", LastName = "Bobsky", Salary = 600, Role = Role.Other };
+            // Employee emp = new Employee() { FirstName = "Bob", LastName = "Bobsky", Salary = 600, Role = Role.Other };
             SalesPerson sale = new SalesPerson("Bill", "Billsky", 1500);
 
             sale.ExtendSuccessSaleRevenue(2000);
-            emp.PrintInfo();
+            //emp.PrintInfo();
             sale.PrintInfo();
-            Console.WriteLine("Employee Salary: " + emp.GetSalary());
+            //Console.WriteLine("Employee Salary: " + emp.GetSalary());
             Console.WriteLine("Sales Person Salary: " + sale.GetSalary());
             Console.ReadLine();
         }

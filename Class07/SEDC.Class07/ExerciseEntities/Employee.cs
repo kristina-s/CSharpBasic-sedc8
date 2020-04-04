@@ -10,7 +10,7 @@ namespace ExerciseEntities
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public double Salary { get; set; }
+        protected double Salary { get; set; }
         public Role Role { get; set; }
 
         public void PrintInfo()
